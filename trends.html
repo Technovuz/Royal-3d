@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+     <script src="https://cdn.tailwindcss.com">
+  </script>
+ <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+    rel="stylesheet"
+  /> -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-papNMl4iI2+FfF+PyaOnRWnUbyxN8xaz94UwOmn2TbdNqgYgN82VzO5LF4bqDQ5yEzf3J8eRoDKch+aB6YY6xg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+  <!-- <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  /> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    /* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+  </style>
+ 
+
+<style>
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+</style>
+
+
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      margin: 0;
+    }
+   
+    
+  </style>
+   <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+    nav ul li {
+      /* margin-left: 20px; */
+    display: flex
+;
+    color: #2a2929d9;
+    font-size: 14px;
+    cursor: pointer;
+    height: 65px;
+    align-items: center;
+    gap: 0px;
+      
+    }
+    nav ul li span {
+      line-height: 20px;
+    }
+    nav ul li a {
+      position: relative;
+    display: flex
+;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    }
+    nav ul li i {
+      font-size: 10px;
+      color: #1a1a1a;
+      line-height: 20px;
+    }
+    button.store-btn {
+      border: 1px dashed #eb5976;
+      border-radius: 6px;
+      padding: 3px 10px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      background: transparent;
+    }
+    button.store-btn i {
+      color: #eb5976;
+      font-size: 18px;
+      line-height: 20px;
+    }
+    button.store-btn .text-explore {
+      font-size: 10px;
+      font-weight: 600;
+      color: #eb5976;
+      line-height: 12px;
+      font-family: 'Inter', sans-serif;
+    }
+    button.store-btn .text-store {
+      font-size: 11px;
+      font-weight: 600;
+      color: #16204a;
+      line-height: 15px;
+      font-family: 'Inter', sans-serif;
+    }
+    button.estimate-btn {
+      padding: 0 18px;
+    line-height: 35px;
+    font-size: 12px;
+    color: #fff;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #16204a;
+    }
+    button.estimate-btn:hover {
+      background-color: #16204a;
+    }
+    .user-icon {
+      width: 40px;
+      height: 40px;
+      background-color: #d9d9d9;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #8c8c8c;
+      font-size: 18px;
+      line-height: 20px;
+      cursor: pointer;
+    }
+
+    .max-w-md {
+    max-width: 31rem !important;
+}
+    .living-room-design {
+  font-family: 'Lato', sans-serif;
+  padding: 40px;
+}
+
+h2 {
+  color: #212121;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 10px 35px;
+  background-color: #eeeeee;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab.active {
+  background-color: #ef5a7b;
+  color: white;
+}
+
+.tab-content {
+  background-color: #fff6f7;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.color-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.color-options button {
+  padding: 10px 15px;
+  border: 1px solid #f2c7c7;
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.color-options button:hover {
+  background-color: #ffe8ec;
+}
+
+
+.Living-buton{
+ color: #666;
+        padding: 9px 68px;
+        background: #e94a6f;
+        color: white;
+        font-size: 14px;
+        border-radius: 5px;
+        font-weight: 500;
+        white-space: nowrap;
+        cursor: pointer;
+        width: 180px;
+}
+
+.swiper-slide{
+    height: 350px;
+}
+
+@media (max-width: 1023px) {
+  .responsive-form {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+.logo-nav{
+width: 200px !important;
+}
+.qr-code{
+    width: 128px !important;
+}
+.interior-logo{
+    margin-left: 70px;
+}
+.sofa-div{
+  height: fit-content !important;
+}
+.box-para{
+  font-size: 8px !important;
+  color: black !important;
+}
+
+.hero-img{
+  height:500px !important;
+}
+.hero-main-sec{
+  height: 500px !important;
+}
+.box-1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+}
+.box-img{
+  width: 10px;
+  height: 10px;
+}
+.box-head{
+  font-size: 14px !important;
+  font-weight: 800;
+  text-align: center;
+  color: black;
+}
+.box-para{
+  font-size: 8px !important;
+  text-align: center;
+
+}
+.box-main{
+  display: flex;
+  align-items: center !important;
+  justify-content: space-evenly !important;
+  width: 100% !important;
+  padding-bottom: 0rem !important;
+}
+.main-heading-con{
+  margin-top: 60px !important;
+}
+.Wallpapers-header-h1{
+  font-weight:normal !important;
+  font-size: 25px !important;
+
+}
+.Wallpapers-header-p{
+  width: 100%;
+
+}
+.hero-main-2{
+  padding: 0px !important;
+  width: 100% !important;
+}
+.section-hero{
+  padding: 10px;
+ font-size: 12px !important;
+ margin-top: 10px !important;
+}
+.Horizontal-Scroll{
+    display: flex;
+    align-items: center;
+    justify-content: start !important;
+}
+.scrollTo{
+  display: none !important;
+}
+}
+
+
+
+
+ /* Custom scrollbar for horizontal scroll */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+
+
+    
+  </style>
+  
+
+
+  <!-- whatsapp Animation -->
+<style>
+  @layer utilities {
+    @keyframes custom-bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    .animate-custom-bounce {
+      animation: custom-bounce 1s ease-in-out infinite;
+    }
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 480px) {
+    .WhatsApp-icon{
+      right: 0px !important;
+      
+    }
+}
+</style>
+
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+<body class="scroll-smooth">
+    
+       <nav class="w-full border-b border-gray-200 px-6" style="font-family: __fonts_de4bfb,__fonts_Fallback_de4bfb,latoregular,sans-serif;">
+  <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-0">
+    <div class="flex items-center justify-center h-16">
+      <!-- Logo -->
+   <a href="/home.html" class="flex flex-col items-start leading-none">
+  <img 
+    src="/WhatsApp Image 2025-05-14 at 18.40.59_f23516e9.png"
+    alt="Interior Company logo"
+    class="logo-nav w-[180px] h-[80px] object-contain"
+    draggable="false"
+    width="180"
+    height="80"
+  />
+</a>
+
+   
+      <!-- Toggle Button -->
+      <!-- <input type="checkbox" id="menu-toggle" class="hidden peer" />
+      <label for="menu-toggle" class="lg:hidden text-2xl cursor-pointer">
+        <i class="fas fa-bars"></i>
+      </label> -->
+
+      <!-- Menu -->
+      <div class="hidden peer-checked:flex lg:flex flex-col lg:flex-row lg:items-center justify-between lg:space-x-6 absolute lg:static top-16 left-0 w-full bg-white lg:bg-transparent z-50 px-6 py-4">
+        <!-- Nav Links -->
+       <ul class="ul-li flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6 items-start lg:items-center text-[rgb(37,36,36)]">
+
+
+
+
+
+
+  <!-- Wall Painting -->
+<!--  Wall Painting -->
+<li class="relative flex items-center cursor-pointer"
+    onmouseenter="showDropdown('WallPainting','wallIcon')"
+    onmouseleave="hideDropdown('WallPainting','wallIcon')">
+
+  <div class="flex items-center space-x-1 text-[rgb(37,36,36)] font-medium">
+    <span>Wall Painting</span>
+    <i id="wallIcon" class="fas fa-chevron-down transform transition-transform duration-300"></i>
+  </div>
+
+  <!-- Dropdown menu -->
+  <div id="WallPainting" class="hidden absolute left-0 top-full bg-white shadow-lg mt-0 p-4 rounded-md z-50 w-[200px] text-sm text-gray-800">
+    <div class="grid grid-cols-2 gap-x-6 gap-y-2 w-full">
+      <a href="/wall-painting/Wood-Effect.html" class="hover:text-red-500">Wood Effect Painting</a>
+     
+    </div>
+  </div>
+</li>
+
+
+ <!-- Design Idea -->
+<!-- Design Idea -->
+
+ <li class="relative flex items-center cursor-pointer"
+    onmouseenter="showDropdown('designDropdown', 'designIcon')"
+    onmouseleave="hideDropdown('designDropdown', 'designIcon')">
+
+  <div class="flex items-center space-x-1 text-[rgb(37,36,36)] font-medium">
+    <span> <a href="/wallpapers.html">Wallpapers</a></span>
+    <i id="designIcon" class="fas fa-chevron-down transform transition-transform duration-300"></i>
+  </div>
+
+  <!-- Dropdown -->
+ <!-- Main Dropdown Container -->
+<div id="designDropdown"
+     class="hidden absolute left-0 top-full bg-white shadow-lg mt-0 p-6 rounded-md z-50 w-[250px] text-sm text-gray-800">
+
+  <div class="grid grid-cols-1 gap-x-8 gap-y-3 w-full">
+
+    <a href="/wall-paper/Imported-Wallpapers.html" class="hover:text-red-500">Imported Wallpapers</a>
+    <a href="/wall-paper/customized-Wallpapers.html" class="hover:text-red-500">Customized Wallpapers</a>
+    <a href="/wall-paper/foam-Sheets.html" class="hover:text-red-500">Foam Sheets</a>
+
+    <!-- Sticker Roll with Submenu -->
+    <div class="relative group">
+      <div class="flex items-center justify-between hover:text-red-500 cursor-pointer">
+        <span>Sticker Roll</span>
+<i class="fa-solid fa-chevron-right " style="color: #000000;"></i>      </div>
+
+      <!-- Submenu -->
+      <div class="hidden group-hover:block absolute left-full bo top-0 ml-0 bg-white shadow-md rounded-md p-3 w-[200px] z-50">
+        <a href="/wall-paper/self-Adhesive.html" class="block hover:text-red-500">Self Adhesive</a>
+      </div>
+    </div>
+
+    <a href="/wall-paper/UV-Marble.html" class="hover:text-red-500">UV Marble Sheets</a>
+    <a href="/wall-paper/3d-pvc.html" class="hover:text-red-500">3D PVC Panel</a>
+
+  </div>
+</div>
+
+</li>
+
+  <!-- Cement Structure (no dropdown) -->
+  <!-- <li class="flex items-center cursor-pointer">
+    <span>Cement Structure</span>
+  </li> -->
+
+
+  <li class="relative flex items-center cursor-pointer"
+    onmouseenter="showDropdown('FloorStickers','Flooricon')"
+    onmouseleave="hideDropdown('FloorStickers','Flooricon')">
+
+  <div class="flex items-center space-x-1 text-[rgb(37,36,36)] font-medium">
+    <span>Floor Stickers</span>
+    <i id="Flooricon" class="fas fa-chevron-down transform transition-transform duration-300"></i>
+  </div>
+
+  <!-- Dropdown menu -->
+  <div id="FloorStickers" class="hidden absolute left-0 top-full bg-white shadow-lg mt-0 p-4 rounded-md z-50 w-[200px] text-sm text-gray-800">
+    <div class="grid grid-cols-2 gap-x-6 gap-y-2 w-full">
+      <a href="/floor-sticker/Marble-Effect.html" class="hover:text-red-500">Marble Effect Stickers
+</a>
+     
+    </div>
+  </div>
+</li>
+
+  <!-- Customized Blinds -->
+  <li class="flex items-center cursor-pointer">
+  <a href="/customizes-blinds/customized-Blinds.html"><span class="text-black">Customized Blinds</span></a>  
+  </li>
+
+
+  <!-- Vertical Garden -->
+  <li class="flex items-center cursor-pointer">
+  <a href="/vertical-garden/vertical-Garden.html"><span class="text-black">Vertical Garden</span></a>  
+  </li>
+
+   <!-- Cities -->
+<!-- Cities Menu -->
+<li class="relative flex items-center cursor-pointer"
+    onmouseenter="showDropdown('citiesDropdown','CitiesIcon')"
+    onmouseleave="hideDropdown('citiesDropdown','CitiesIcon')">
+
+  <div class="flex items-center space-x-1 text-[rgb(37,36,36)] font-medium">
+    <span>Cities</span>
+    <i id="CitiesIcon" class="fas fa-chevron-down transform transition-transform duration-300"></i>
+  </div>
+
+  <!-- Dropdown menu -->
+  <div id="citiesDropdown" class="hidden absolute left-0 top-full bg-white shadow-lg mt-0 p-4 rounded-md z-50 w-[300px] text-sm text-gray-800">
+    <div class="grid grid-cols-2 gap-x-6 gap-y-2 w-full">
+      <a href="/cities/tamilnadu.html" class="hover:text-red-500">Tamilnadu</a>
+      <a href="/cities/kerala.html" class="hover:text-red-500">kerala</a>
+      <a href="/cities/pondicherry.html" class="hover:text-red-500">Pondicherry</a>
+      <a href="/cities/bangalore.html" class="hover:text-red-500">Bangalore</a>
+      <a href="/cities/mumbai.html" class="hover:text-red-500">Mumbai</a>
+      <a href="/cities/pune.html" class="hover:text-red-500">Pune</a>
+      <a href="/cities/kolkata.html" class="hover:text-red-500">Kolkata</a>
+      <a href="/cities/dubai.html" class="hover:text-red-500">Dubai</a>
+      <a href="/cities/abu-dhabi.html" class="hover:text-red-500">Abu Dhabi</a>
+      <a href="/cities/sharjah.html" class="hover:text-red-500">Sharjah</a>
+    </div>
+  </div>
+</li>
+ <!-- Trends (no dropdown) -->
+  <li class="flex items-center cursor-pointer">
+  <a href="/trends.html"><span class="text-black">Trends</span></a>  
+  </li>
+</ul>
+
+
+        <!-- Right Side -->
+        <div class="flex flex-col lg:flex-row lg:items-center lg:space-x-4 mt-4 lg:mt-0 space-y-2 lg:space-y-0">
+          <!-- Store button -->
+          <!-- <button type="button" class="store-btn flex items-center space-x-2">
+            <div class="Header_mkStore__gDoEb">
+              <img alt="Marketplace" width="25" height="25" src="/store-icon.51a2fecf.gif">
+            </div>
+            <div class="flex flex-col text-right leading-tight">
+              <span class="text-explore">Explore</span>
+              <span class="text-store">STORE</span>
+            </div>
+          </button> -->
+
+          <!-- Estimate button -->
+          <!-- <button type="button" class="estimate-btn"><a href="/get-estimate.html">Get Free Estimate</a></button> -->
+
+          <!-- User icon -->
+         <div aria-label="User profile icon" class="w-15 h-16 rounded-full overflow-hidden">
+  <img src="/royal-project/footer-logo.png" alt="User Icon" class="w-full h-full object-cover">
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Bottom Nav -->
+<nav class="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 shadow z-50">
+  <div class="flex justify-around items-center py-2 text-sm text-gray-700">
+    <a href="/home.html" class="flex flex-col items-center transition-all hover:text-blue-600">
+      <i class="fas fa-home text-lg mb-1"></i>
+      <span>Home</span>
+    </a>
+
+    <a href="/trends.html" class="flex flex-col items-center transition-all hover:text-blue-600">
+      <i class="fa-solid fa-arrow-trend-up text-lg mb-1"></i>
+      <span>Trends</span>
+    </a>
+
+    <a href="tel:+919361603353" class="flex flex-col items-center -mt-6 bg-blue-600 text-white px-4 py-2 rounded-2xl shadow-lg transition-all hover:bg-blue-700">
+      <i class="fas fa-phone text-lg"></i>
+      <span class="text-xs font-bold mt-1">Talk</span>
+    </a>
+
+    <a href="/contact.html" class="flex flex-col items-center transition-all hover:text-blue-600">
+      <i class="fa-solid fa-address-book text-lg mb-1"></i>
+      <span>Contact</span>
+    </a>
+
+    <!-- Button to open "More" Menu -->
+    <button onclick="toggleMoreMenu()" class="flex flex-col items-center focus:outline-none transition-all hover:text-blue-600">
+      <i class="fas fa-th-large text-lg mb-1"></i>
+      <span>More</span>
+    </button>
+  </div>
+</nav>
+
+
+<!-- Hidden More Menu -->
+
+<div id="moreMenu" class="fixed bottom-16 left-0 w-full bg-white border-t border-gray-200 shadow-md hidden z-50">
+  <ul class="divide-y divide-gray-200 text-sm text-gray-700">
+
+
+
+    <!-- Wall Painting -->
+    <li>
+      <button onclick="toggleSubmenu('paintingSub')" class="w-full flex justify-between items-center px-4 py-3">
+        <span>Wall Painting</span>
+        <i class="fas fa-chevron-down text-xs text-gray-500"></i>
+      </button>
+      <ul id="paintingSub" class="hidden bg-gray-50">
+        <li><a href="/wall-painting/Wood-Effect.html" class="block px-6 py-2">Wood Effect Painting</a></li>
+      </ul>
+    </li>
+
+
+    <!-- Wallpapers with Dropdown -->
+<li>
+  <button onclick="toggleSubmenu('wallpapersSub')" class="w-full flex justify-between items-center px-4 py-3">
+    <span><a href="/wallpapers.html">Wallpapers</a></span>
+    <i class="fas fa-chevron-down text-xs text-gray-500"></i>
+  </button>
+  <ul id="wallpapersSub" class="hidden bg-gray-50">
+    <li><a href="/wall-paper/Imported-Wallpapers.html" class="block px-6 py-2">Imported Wallpapers</a></li>
+    <li><a href="/wall-paper/customized-Wallpapers.html" class="block px-6 py-2">Customized Wallpapers</a></li>
+    <li><a href="/wall-paper/foam-Sheets.html" class="block px-6 py-2">Foam Sheets</a></li>
+
+    <!-- Sticker Roll with Submenu -->
+    <li>
+      <button onclick="toggleSubmenu('stickerRollSub')" class="w-full flex justify-between items-center px-6 py-2">
+        <span>Sticker Roll</span>
+        <i class="fas fa-chevron-down text-xs text-gray-500"></i>
+      </button>
+      <ul id="stickerRollSub" class="hidden bg-gray-100 ml-4">
+        <li><a href="/wall-paper/self-Adhesive.html" class="block px-6 py-2">Self Adhesive</a></li>
+      </ul>
+    </li>
+
+    <li><a href="/wall-paper/UV-Marble.html" class="block px-6 py-2">UV Marble Sheets</a></li>
+    <li><a href="/wall-paper/3d-pvc.html" class="block px-6 py-2">3D PVC Panel</a></li>
+  </ul>
+</li>
+
+
+
+    <!-- Floor Stickers -->
+    <li>
+      <button onclick="toggleSubmenu('floorSub')" class="w-full flex justify-between items-center px-4 py-3">
+        <span>Floor Stickers</span>
+        <i class="fas fa-chevron-down text-xs text-gray-500"></i>
+      </button>
+      <ul id="floorSub" class="hidden bg-gray-50">
+        <li><a href="/floor-sticker/Marble-Effect.html" class="block px-6 py-2">Marble Effect Painting</a></li>
+      </ul>
+    </li>
+
+    <!-- Customized Blinds -->
+    <li>
+      <a href="/customizes-blinds/customized-Blinds.html" class="block px-4 py-3">Customized Blinds</a>
+    </li>
+
+    <!-- Vertical Garden -->
+    <li>
+      <a href="/vertical-garden/vertical-Garden.html" class="block px-4 py-3">Vertical Garden</a>
+    </li>
+
+    <!-- Cities -->
+    <li>
+      <button onclick="toggleSubmenu('citiesSub')" class="w-full flex justify-between items-center px-4 py-3">
+        <span>Cities</span>
+        <i class="fas fa-chevron-down text-xs text-gray-500"></i>
+      </button>
+      <ul id="citiesSub" class="hidden bg-gray-50">
+         <li><a href="/cities/tamilnadu.html" class="block px-6 py-2">Tamilnadu</a></li>
+        <li><a href="/cities/kerala.html" class="block px-6 py-2">kerala</a></li>
+        <li><a href="/cities/pondicherry.html" class="block px-6 py-2">Pondicherry</a></li>
+        <li><a href="/cities/bangalore.html" class="block px-6 py-2">Bangalore</a></li>
+        <li><a href="/cities/mumbai.html" class="block px-6 py-2">Mumbai</a></li>
+        <li><a href="/cities/pune.html" class="block px-6 py-2">Pune</a></li>
+        <li><a href="/cities/kolkata.html" class="block px-6 py-2">Kolkata</a></li>
+        <li><a href="/cities/dubai.html" class="block px-6 py-2">Dubai</a></li>
+        <li><a href="/cities/abu-dhabi.html" class="block px-6 py-2">Abu Dhabi</a></li>
+        <li><a href="/cities/sharjah.html" class="block px-6 py-2">Sharjah</a></li>
+
+      </ul>
+    </li>
+
+    <!-- Trends -->
+    <li>
+      <a href="/trends.html" class="block px-4 py-3">Trends</a>
+    </li>
+
+   
+  </ul>
+</div>
+
+<!-- hero -->
+<section class="bg-[#f8f9fa] flex flex-col text-sm font-sans  text-gray-600">
+  <!-- Header -->
+  <header class="bg-white py-7 px-4 sm:px-6 md:px-12 lg:px-40 shadow-sm w-full">
+    <nav class="text-sm">
+     <a class="text-[15px]" href="/home.html">Home</a>  <span class="font-semibold text-[15px] text-black" >| <a href="/trends.html">Trends</a> </span>
+    </nav>
+  </header>
+</section>
+
+
+
+
+<section class="bg-blue-100 py-10 px-6 sm:px-12 md:px-20 lg:px-32 xl:px-40">
+  <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <div class="max-w-xl text-center md:text-left">
+      <h1 class="text-2xl sm:text-5xl font-semibold text-[#1f1f1f] leading-tight">
+        Interior Design Trends
+      </h1>
+      <p class="mt-3   text-base text-[#1f1f1f]">
+        Channeling sublime designs, one trend at a time.
+      </p>
+    </div>
+    <div class="flex-shrink-0">
+      <img
+        src="/trendsBanner.svg"
+        alt="Illustration of a person sitting on a beanbag using a laptop with a plant and coffee cup nearby"
+        class="w-[300px] sm:w-[350px] h-auto"
+        width="300"
+        height="250"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- whatsapp -->
+<a
+  href="https://wa.me/919361603353"
+  target="_blank"
+  class="WhatsApp-icon fixed bottom-20 right-2 b  text-white p-4   z-50  "
+  aria-label="Chat on WhatsApp"
+>
+<i class="  fab fa-whatsapp font-bold text-4xl text-green-600 animate-custom-bounce"></i>
+
+
+</a>
+
+
+<!-- scrollTo -->
+
+
+<button
+  onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  class="scrollTo fixed bottom-5 right-4 bg-blue-900 hover:bg-blue-800 text-white p-3 rounded-full shadow-xl z-50 transition transform hover:scale-105 animate-pulse sm:p-3.5"
+  title="Back to Top"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class=" h-4 w-4 sm:h-5 sm:w-5" fill="none"
+    viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M5 15l7-7 7 7" />
+  </svg>
+</button>
+
+
+<!-- menu -->
+ <section class="bg-[#f9f9f9] " >
+
+
+  <section class=" max-w-7xl mx-auto lg:px-8 ">
+  <!-- Navigation -->
+<!-- Horizontal Scroll Menu -->
+<section class="Horizontal-Scroll border-b border-gray-200 overflow-x-auto flex justify-center">
+  <ul class="flex w-max space-x-16 px-6 py-4 text-base font-normal">
+    <li><a href="#all" class="text-blue-500 border-b-4 border-blue-500 pb-1 inline-block">All</a></li>
+    <li><a href="#modular" class="text-black whitespace-nowrap">Modular Solutions</a></li>
+    <li><a href="#furniture" class="text-black whitespace-nowrap">Furniture & Décor</a></li>
+    <li><a href="#rooms" class="text-black whitespace-nowrap">Rooms</a></li>
+    <li><a href="#architecture" class="text-black whitespace-nowrap">Architecture</a></li>
+    <li><a href="#design" class="text-black whitespace-nowrap">Design and Construction</a></li>
+  </ul>
+</section>
+
+
+
+
+  <!-- Modular Solutions -->
+<section  id="modular" class="bg-[#f9f9f9] py-6 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
+      <i class="fas fa-chart-line text-blue-500"></i>
+      <span>Modular Solutions</span>
+      
+    </div>
+
+    <!-- Scroll on small, grid on md+ -->
+    <div class="overflow-x-auto md:overflow-visible">
+      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
+        <!-- Item 1 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="https://storage.googleapis.com/a1aa/image/ae37b666-d3f4-4007-fcfb-b2345a352161.jpg"
+            alt="Modern kitchen with white cabinets and breakfast counter with stools"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Kitchen</p>
+          <p class="text-base text-black leading-snug">
+            8 Breakfast Counter Styles To Spruce Up Your Indian Kitchen
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="https://storage.googleapis.com/a1aa/image/5bb703fa-c1ac-4ca4-f6d8-a8c68e99b7bd.jpg"
+            alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Kitchen</p>
+          <p class="text-base text-black leading-snug">
+            Gateways of Taste: Modern Kitchen Door Designs
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="https://storage.googleapis.com/a1aa/image/e8ecee50-8c9c-4fce-89f5-c843ea7bfa99.jpg"
+            alt="Small bathroom with green walls and creative storage ideas"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Storage</p>
+          <p class="text-base text-black leading-snug">
+            12 Brilliant Bathroom Storage Ideas for Small Spaces
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="https://storage.googleapis.com/a1aa/image/9edff2d5-1e2f-43ee-b356-433089811ebd.jpg"
+            alt="Hallway with modern wall cupboard and glass door designs"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Wardrobe</p>
+          <p class="text-base text-black leading-snug">
+            From Drab to Fab: Hallway Cupboard Designs That Turn Heads
+          </p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="https://storage.googleapis.com/a1aa/image/24ff4f93-1a3f-458b-9aac-ea87f9feac2e.jpg"
+            alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Wardrobe</p>
+          <p class="text-base text-black leading-snug">
+            Because Every Outfit Deserves A Perfect Home!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Furniture & Décor -->
+ <section id="furniture" class="bg-[#f9f9f9] py-6 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
+      <i class="fas fa-chart-line text-blue-500"></i>
+      <span>Furniture & Décor</span>
+      
+    </div>
+
+    <!-- Scroll on small, grid on md+ -->
+    <div class="overflow-x-auto md:overflow-visible">
+      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
+        
+        <!-- Item 1: Living Room -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/514638513405725591926.jpg"
+            alt="Traditional living room"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">DIY</p>
+          <p class="text-base text-black leading-snug">
+            Write Your Wall Story With Creative Wall Craft Hangings
+          </p>
+        </div>
+
+        <!-- Item 2: Bedroom -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/259638028353993868147.jpg"
+            alt="Indian style bedroom"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Door Design</p>
+          <p class="text-base text-black leading-snug">
+            10 Stylish Kitchen Entrance Design Ideas for a Stunning Home
+          </p>
+        </div>
+
+        <!-- Item 3: Bathroom -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+            alt="Simple Indian bathroom"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Exterior Design</p>
+          <p class="text-base text-black leading-snug">
+            Stylish Modern Exterior Wall Tile Designs: The Recipe for a Picture-Perfect Home
+          </p>
+        </div>
+
+        <!-- Item 4: Dining Room -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/Kitchen-false-ceiling (1).jpg"
+            alt="Indian style dining room"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">False Ceilings</p>
+          <p class="text-base text-black leading-snug">
+            11 Stylish POP Corner Designs That Refresh Your Living Room in No Time
+          </p>
+        </div>
+
+        <!-- Item 5: Home Office -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/Wardrobe.jpg"
+            alt="Compact home office"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Furniture</p>
+          <p class="text-base text-black leading-snug">
+            From Plush to Sleek: Discover the Best Sofa Materials for Your Home
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+  <!-- Rooms -->
+  <section id="rooms" class="bg-[#f9f9f9] py-6 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
+      <i class="fas fa-chart-line text-blue-500"></i>
+      <span>Rooms</span>
+      
+    </div>
+
+    <!-- Scroll on small, grid on md+ -->
+    <div class="overflow-x-auto md:overflow-visible">
+      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
+        <!-- Item 1 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/Kids-Room.jpg"
+            alt="Modern kitchen with white cabinets and breakfast counter with stools"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Balcony</p>
+          <p class="text-base text-black leading-snug">
+            
+Discovering The Secrets To Creating Your Perfect Balcony Garden!
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/739638684082511567667.jpg"
+            alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Bathroom</p>
+          <p class="text-base text-black leading-snug">
+           
+Top 16+ Stunning Wash Basin Designs for a Stylish Bathroom Makeover
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/983638516448620649079 (1).jpg"
+            alt="Small bathroom with green walls and creative storage ideas"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1"> Dining Room</p>
+          <p class="text-base text-black leading-snug">
+           
+25 + Simple Ways To Decorate Your Dining Room Table That Will Impress Your Guests
+
+
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/customizes-blinds/814oqhsgvAL._AC_UF894,1000_QL80_.jpg"
+            alt="Hallway with modern wall cupboard and glass door designs"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Home Office</p>
+          <p class="text-base text-black leading-snug">
+            
+40 New Modern POP Plus-Minus Designs to Spruce Up Fifth Wall of Your Room
+          </p>
+        </div>
+
+        <!-- Item 5 -->
+        <!-- <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="https://storage.googleapis.com/a1aa/image/24ff4f93-1a3f-458b-9aac-ea87f9feac2e.jpg"
+            alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Wardrobe</p>
+          <p class="text-base text-black leading-snug">
+            Because Every Outfit Deserves A Perfect Home!
+          </p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Architecture -->
+   <section id="architecture" class="bg-[#f9f9f9] py-6 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
+      <i class="fas fa-chart-line text-blue-500"></i>
+      <span>Architecture</span>
+      
+    </div>
+
+    <!-- Scroll on small, grid on md+ -->
+    <div class="overflow-x-auto md:overflow-visible">
+      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
+        <!-- Item 1 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/315638762567960981432.jpg"
+            alt="Modern kitchen with white cabinets and breakfast counter with stools"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Architects</p>
+          <p class="text-base text-black leading-snug">
+            
+Blenheim Gardens- Unearth the Chapters of History
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/259638028353993868147.jpg"
+            alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Architects</p>
+          <p class="text-base text-black leading-snug">
+            
+The Iconic Works of Antoni Gaudí: A Tour of His Architecture
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/716638682247563568813.jpg"
+            alt="Small bathroom with green walls and creative storage ideas"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">1Buildings and Monuments</p>
+          <p class="text-base text-black leading-snug">
+            
+Revolutionary 3D-printed Homes for Modern Habitation
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="https://storage.googleapis.com/a1aa/image/9edff2d5-1e2f-43ee-b356-433089811ebd.jpg"
+            alt="Hallway with modern wall cupboard and glass door designs"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Buildings and Monuments</p>
+          <p class="text-base text-black leading-snug">
+            
+The New Parliament Building– Envisioning a New India
+          </p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/983638516448620649079.jpg"
+            alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Celebrity Homes</p>
+          <p class="text-base text-black leading-snug">
+            
+Allu Arjun House: A True Personification of Grandeur and Simplicity
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Design and Construction -->
+   <section id="design" class="bg-[#f9f9f9] py-6 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
+      <i class="fas fa-chart-line text-blue-500"></i>
+      <span>Design and Construction</span>
+      
+    </div>
+
+    <!-- Scroll on small, grid on md+ -->
+    <div class="overflow-x-auto md:overflow-visible">
+      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
+        <!-- Item 1 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/customizes-blinds/71cnUbRC8xL.jpg"
+            alt="Modern kitchen with white cabinets and breakfast counter with stools"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Materials</p>
+          <p class="text-base text-black leading-snug">
+            
+What is the Difference Between Marble and Granite?
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/customizes-blinds/minimalistic-living-room-design.jpg"
+            alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Materials</p>
+          <p class="text-base text-black leading-snug">
+            
+A Guide to IPS Flooring: Benefits, Types and More!
+          </p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/customizes-blinds/814oqhsgvAL._AC_UF894,1000_QL80_.jpg"
+            alt="Small bathroom with green walls and creative storage ideas"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Tips and Advice</p>
+          <p class="text-base text-black leading-snug">
+            
+Your Guideway to Different Types of Staircase Designs
+
+
+          </p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="/wall-painting/WhatsApp Image 2025-05-15 at 8.37.36 AM.jpeg"
+            alt="Hallway with modern wall cupboard and glass door designs"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Tips and Advice</p>
+          <p class="text-base text-black leading-snug">
+            
+The Ultimate Guide to Ideal Size for Living Rooms
+          </p>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <img
+            src="https://storage.googleapis.com/a1aa/image/24ff4f93-1a3f-458b-9aac-ea87f9feac2e.jpg"
+            alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
+            class="w-full h-[140px] object-cover rounded-sm"
+          />
+          <p class="text-xs text-blue-500 mt-2 mb-1">Vastu Tips</p>
+          <p class="text-base text-black leading-snug">
+            
+Staircase Vastu Shastra Tips to Enhance Your Home's Harmony
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+</section>
+
+
+ </section>
+
+
+
+
+
+
+<!-- contact -->
+
+ <section class="bg-gray-50 font-sans text-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div style="height: 150px; display: flex;flex-direction: column;justify-content: end;gap: 5px;">
+    <h1 class="text-[30px] font-normal leading-7 mb-1">What’s the Buzz?</h1>
+    <p class="text-[15px] font-normal leading-5 text-gray-600 mb-8">
+      Tap into the latest interior design trends to reinvent your home.
+    </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="space-y-6 lg:col-span-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <article>
+            <img
+              src="/610638185522258099997.jpg"
+              alt="Interior kitchen with brick wall, wooden floor, white cabinets, and a lamp on tripod stand"
+              class="rounded-lg w-full object-cover aspect-[2/1]"
+            />
+            <p class="text-blue-400 text-[11px] font-normal leading-[14px] mt-1 mb-1">
+              Bedroom
+            </p>
+            <h2 class="text-[16px] font-normal leading-5">
+              Smart &amp; Stylish Dressing Room Design Ideas for Every Home
+            </h2>
+          </article>
+          <article>
+            <img
+              src="https://storage.googleapis.com/a1aa/image/d3cfe6ad-4b68-4bfa-b80d-24aa454f70e0.jpg"
+              alt="Interior kitchen with brick wall, wooden floor, white cabinets, and a lamp on tripod stand"
+              class="rounded-lg w-full object-cover aspect-[2/1]"
+            />
+            <p class="text-blue-400 text-[11px] font-normal leading-[14px] mt-1 mb-1">
+              Kitchen
+            </p>
+            <h2 class="text-[16px] font-normal leading-5">
+              18 Small Kitchen Island Ideas That Maximise Your Space
+            </h2>
+          </article>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <article>
+            <img
+              src="https://storage.googleapis.com/a1aa/image/f78be8cf-799e-49f6-1fad-00d2d62be8da.jpg"
+              alt="Living room with blue sofa, white round table, green wall, and hanging lamps"
+              class="rounded-lg w-full object-cover aspect-[2/1]"
+            />
+            <p class="text-blue-400 text-[11px] font-normal leading-[14px] mt-1 mb-1">
+              Living Room
+            </p>
+            <h2 class="text-[16px] font-normal leading-5">
+              Want a Beautiful Living Room? Get 11+ Expert Tips on Making Your Space Stunning
+            </h2>
+          </article>
+          <article>
+            <img
+              src="https://storage.googleapis.com/a1aa/image/9b97daff-7bb8-4524-9676-e6f87e8c2445.jpg"
+              alt="Bedroom with bed, side table, plants, and large window with natural light"
+              class="rounded-lg w-full object-cover aspect-[2/1]"
+            />
+            <p class="text-blue-400 text-[11px] font-normal leading-[14px] mt-1 mb-1">
+              Outdoors
+            </p>
+            <h2 class="text-[16px] font-normal leading-5">
+              Live in Style: 9 Perfect Bedroom Layouts for Your 10x10 Space
+            </h2>
+          </article>
+        </div>
+      </div>
+      <aside>
+     <form
+  id="decorForm"
+  aria-label="Home Decor Services Made Simpler form"
+  class="bg-white rounded-xl p-6 space-y-4 w-full max-w-md mx-auto"
+  onsubmit="sendWhatsApp(event)"
+>
+  <h3 class="text-[18px] font-semibold leading-6 mb-4">
+    Home Decor Services Made Simpler
+  </h3>
+  <input
+    type="text"
+    id="name"
+    placeholder="Name*"
+    required
+    class="w-full border border-gray-300 rounded-md px-4 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 text-[14px] leading-5"
+  />
+  <div class="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0">
+    <select
+      aria-label="Country code"
+      required
+      class="w-full sm:w-auto border border-gray-300 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-[14px] leading-5"
+    >
+      <option selected>+91</option>
+    </select>
+    <input
+      type="tel"
+      id="mobile"
+      placeholder="Mobile*"
+      required
+      class="flex-1 border border-gray-300 rounded-md px-4 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 text-[14px] leading-5"
+    />
+  </div>
+  <input
+    type="email"
+    id="email"
+    placeholder="Email*"
+    required
+    class="w-full border border-gray-300 rounded-md px-4 py-2 text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-400 text-[14px] leading-5"
+  />
+  <select
+    id="city"
+    aria-label="Choose City"
+    required
+    class="w-full border border-gray-300 rounded-md px-4 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-400 text-[14px] leading-5"
+  >
+    <option disabled selected>Choose City</option>
+    <option>New York</option>
+    <option>Los Angeles</option>
+    <option>Chicago</option>
+    <option>Houston</option>
+    <option>Phoenix</option>
+  </select>
+  <label class="flex items-center space-x-2 text-gray-700 text-[13px] leading-4">
+    <input
+      type="checkbox"
+      checked
+      class="w-4 h-4 rounded border border-blue-400 text-blue-400 focus:ring-blue-400"
+    />
+    <span>
+      You can reach me on
+      <i class="fab fa-whatsapp text-green-600 ml-1 mr-1"></i>
+      <span class="text-green-600 font-semibold">WhatsApp</span>
+    </span>
+  </label>
+  <button
+    type="submit"
+    class="w-full bg-blue-900 hover:bg-blue-600 text-white font-semibold py-3 rounded-md transition-colors text-[16px] leading-6"
+  >
+    Book Free Consultation
+  </button>
+  <p class="text-[11px] leading-[14px] text-center">
+    By submitting this form, you agree to the
+    <a href="#" class="text-blue-400">privacy policy</a> and
+    <a href="#" class="text-blue-400">terms of use</a>
+  </p>
+</form>
+
+
+      </aside>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Authors -->
+<section class="bg-white">
+  <div class="max-w-full py-10 px-4">
+   <h2 class="text-center text-black text-lg font-normal mb-8">
+    Top Authors
+   </h2>
+   <div class="flex flex-wrap justify-center gap-6">
+
+
+    
+    <div class="flex items-center border border-gray-300 rounded-md px-3 py-2 max-w-[180px]">
+     <img alt="Portrait of Jahanavi Arora smiling with long dark hair" class="w-10 h-10 rounded-md object-cover mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/8276ca57-cf94-4730-eb04-d13a1c662a60.jpg" width="40"/>
+     <div class="text-sm leading-tight">
+      <p class="text-black truncate max-w-[110px]">
+       Jahanavi Arora
+      </p>
+      <p class="text-gray-500">
+       233 Stories
+      </p>
+     </div>
+    </div>
+
+
+
+    <div class="flex items-center border border-gray-300 rounded-md px-3 py-2 max-w-[180px]">
+     <img alt="Portrait of Vamika smiling with long dark hair in a white top" class="w-10 h-10 rounded-md object-cover mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/7044aec9-d8cf-43c8-15f1-f1c198718b83.jpg" width="40"/>
+     <div class="text-sm leading-tight">
+      <p class="text-black truncate max-w-[110px]">
+       Vamika
+      </p>
+      <p class="text-gray-500">
+       123 Stories
+      </p>
+     </div>
+    </div>
+
+
+
+    <div class="flex items-center border border-gray-300 rounded-md px-3 py-2 max-w-[180px]">
+     <img alt="Portrait of Ashutosh Ti smiling with short hair and beard in an orange shirt" class="w-10 h-10 rounded-md object-cover mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/ef56a4ce-6d9a-4c3e-3281-608125bb664f.jpg" width="40"/>
+     <div class="text-sm leading-tight">
+      <p class="text-black truncate max-w-[110px]">
+       Ashutosh Ti...
+      </p>
+      <p class="text-gray-500">
+       73 Stories
+      </p>
+     </div>
+    </div>
+
+
+
+    <div class="flex items-center border border-gray-300 rounded-md px-3 py-2 max-w-[180px]">
+     <img alt="Portrait of Rohan Bhalla standing outdoors with trees in background" class="w-10 h-10 rounded-md object-cover mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/0fb14704-4816-4222-0b5d-01a1ffe4ac92.jpg" width="40"/>
+     <div class="text-sm leading-tight">
+      <p class="text-black truncate max-w-[110px]">
+       Rohan Bhalla
+      </p>
+      <p class="text-gray-500">
+       68 Stories
+      </p>
+     </div>
+    </div>
+
+
+
+    <div class="flex items-center border border-gray-300 rounded-md px-3 py-2 max-w-[180px]">
+     <img alt="Portrait of Sargunpreet smiling with long dark hair wearing a yellow top" class="w-10 h-10 rounded-md object-cover mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/41d5a484-2364-4454-17d4-154dc86f8883.jpg" width="40"/>
+     <div class="text-sm leading-tight">
+      <p class="text-black truncate max-w-[110px]">
+       Sargunpreet ...
+      </p>
+      <p class="text-gray-500">
+       55 Stories
+      </p>
+     </div>
+    </div>
+
+
+    <div class="flex items-center border border-gray-300 rounded-md px-3 py-2 max-w-[180px]">
+     <img alt="Portrait of Amrita Sinha smiling with long dark hair wearing a white top" class="w-10 h-10 rounded-md object-cover mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/008a4559-b491-4b41-e347-bae6c3cf7e01.jpg" width="40"/>
+     <div class="text-sm leading-tight">
+      <p class="text-black truncate max-w-[110px]">
+       Amrita Sinha
+      </p>
+      <p class="text-gray-500">
+       51 Stories
+      </p>
+     </div>
+    </div>
+
+
+
+   </div>
+  </div>
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Section -->
+<section class="bg-[#353535] text-[#d9d9d9] font-sans">
+  <section class="max-w-[1420px] mx-auto px-6 sm:px-12 md:px-16 lg:px-24 py-10">
+    
+    <!-- Top Footer -->
+  <div class="border-y border-gray-600 py-10 flex flex-col md:flex-row items-start md:items-center gap-10 md:gap-20">
+  <!-- Logo -->
+  <div class="flex-shrink-0 mx-auto md:mx-0">
+    <img src="/royal-project/footer-logo.png" alt="INTERIOR COMPANY By Square Yards" class="w-[200px] sm:w-[180px] md:w-[200px] lg:w-[220px] h-auto" />
+  </div>
+
+  <!-- Links Grid -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-x-10 gap-y-6 flex-grow max-w-5xl mx-auto md:mx-0">
+    <div>
+      <h3 class="text-[#e94a63] text-sm mb-2 font-semibold">Overview</h3>
+      <ul class="space-y-2 text-sm font-normal">
+        <li>Interior Designer</li>
+        <li>Trends</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-[#e94a63] text-sm mb-2 font-semibold">Network Sites</h3>
+      <ul class="space-y-2 text-sm font-normal">
+        <li>Square Yards UAE</li>
+        <li>Prop VR</li>
+        <li>Square Yards Canada</li>
+        <li>Square Yards India</li>
+        <li>Prop AMC</li>
+        <li>Urban Money</li>
+        <li>UM Oceania</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-[#e94a63] text-sm mb-2 font-semibold">Interior</h3>
+      <ul class="space-y-2 text-sm font-normal">
+        <li>FAQS</li>
+        <li>Terms & Conditions</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-[#e94a63] text-sm mb-2 font-semibold">More</h3>
+      <ul class="space-y-2 text-sm font-normal">
+        <li>Commercial Interiors</li>
+        <li>Privacy Policy</li>
+        <li><a href="/contact.html">Contact Us</a></li>
+        <li>Lending Partners</li>
+        <li>Refer And Earn</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <br>
+
+  <!-- Middle Section  -->
+
+   <div class="flex flex-wrap  justify-around border-gray-600 pb-10 mb-10"   >
+    <div class="w-full sm:w-1/3 mb-8 sm:mb-0">
+     <h3 class="text-[#d43c57] text-base font-normal mb-3">
+      Contact Us
+     </h3>
+     <p class="text-sm font-normal mb-1">
+      Call us on, toll free no.
+     </p>
+     <p class="text-sm font-semibold mb-1">
+      +91 9361603353
+     </p>
+     <p class="text-sm font-normal">
+      Write to us at
+     </p>
+     <p class="text-sm font-normal">
+      royalwalldecorative@gmail.com
+     </p>
+    </div>
+    <div class="w-full sm:w-1/3 mb-8 sm:mb-0">
+     <h3 class="text-[#d43c57] text-base font-normal mb-3">
+      Address
+     </h3>
+     <p class="text-sm font-semibold max-w-[300px]">
+      Perumal Nager , AR Camp Road ,Nagercoil
+     </p>
+    </div>
+    <div class="w-full sm:w-1/3">
+     <h3 class="text-[#d43c57] text-base font-normal mb-3">
+      Social Links
+     </h3>
+     <div class="flex space-x-6 text-[#d1d1d1] text-lg">
+      <a aria-label="Instagram" class="hover:text-[#d43c57]" href="#">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a aria-label="Facebook" class="hover:text-[#d43c57]" href="#">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+      <a aria-label="LinkedIn" class="hover:text-[#d43c57]" href="#">
+       <i class="fab fa-linkedin-in">
+       </i>
+      </a>
+      <a aria-label="Pinterest" class="hover:text-[#d43c57]" href="#">
+       <i class="fab fa-pinterest-p">
+       </i>
+      </a>
+      <a aria-label="YouTube" class="hover:text-[#d43c57]" href="#">
+       <i class="fab fa-youtube">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+  
+   <!-- Footer Bottom -->
+<div class="border-t border-gray-600 mt-10 pt-4 text-white text-sm font-normal flex flex-col md:flex-row items-center justify-between px-4 text-center md:text-left">
+  <p>© 2025 www.royal3dwallpapers.com. All rights reserved</p>
+  <p class="text-gray-300 mt-2 md:mt-0">Developed by 
+    <a href="https://technovuz.com" target="_blank" class="text-red-700 font-bold hover:underline">Technovuz</a>
+  </p>
+</div>
+
+  </section>
+</section>
+
+
+</body>
+<!-- nav -->
+<script>
+  function showDropdown(dropdownId, iconId) {
+    document.getElementById(dropdownId).classList.remove('hidden');
+    if (iconId) document.getElementById(iconId).classList.add('rotate-180');
+  }
+
+  function hideDropdown(dropdownId, iconId) {
+    document.getElementById(dropdownId).classList.add('hidden');
+    if (iconId) document.getElementById(iconId).classList.remove('rotate-180');
+  }
+</script>
+
+<!-- nav -->
+<script>
+  function toggleDropdown(dropdownId, iconId) {
+    const dropdown = document.getElementById(dropdownId);
+    const icon = document.getElementById(iconId);
+
+    dropdown.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+  }
+
+  // Optional: Click outside to close dropdown
+  document.addEventListener('click', function (event) {
+    const isTrigger = event.target.closest('[onclick^="toggleDropdown"]');
+    const dropdown = document.getElementById('designDropdown','CitiesIcon','FloorStickers','WallPainting');
+    const icon = document.getElementById('designIcon','CitiesIcon','Flooricon','wallicon');
+
+    if (!isTrigger && !dropdown.contains(event.target)) {
+      dropdown.classList.add('hidden');
+      icon.classList.remove('rotate-180');
+    }
+  });
+</script>
+<!-- Toggle Script -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+  });
+</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+  // Toggle Main "More" Menu
+  function toggleMoreMenu() {
+    const menu = document.getElementById("moreMenu");
+    menu.classList.toggle("hidden");
+
+    // Close all submenus when main menu closes
+    if (menu.classList.contains("hidden")) {
+      const allSubmenus = document.querySelectorAll('#moreMenu ul ul');
+      allSubmenus.forEach(menu => menu.classList.add('hidden'));
+    }
+  }
+
+  // Toggle Submenus
+  function toggleSubmenu(id) {
+    const allSubmenus = document.querySelectorAll('#moreMenu ul ul');
+    allSubmenus.forEach(menu => {
+      if (menu.id !== id) menu.classList.add('hidden');
+    });
+    const menu = document.getElementById(id);
+    menu.classList.toggle('hidden');
+  }
+
+  // Close the menu when clicking outside of it
+  document.addEventListener('click', function (event) {
+    const moreMenu = document.getElementById('moreMenu');
+    const isClickInside = moreMenu.contains(event.target);
+    const isToggleButton = event.target.closest('[onclick*="toggleMoreMenu"]');
+
+    if (!isClickInside && !isToggleButton && !moreMenu.classList.contains('hidden')) {
+      moreMenu.classList.add('hidden');
+
+      // Also hide all submenus
+      const allSubmenus = document.querySelectorAll('#moreMenu ul ul');
+      allSubmenus.forEach(menu => menu.classList.add('hidden'));
+    }
+  });
+</script>
+<script>
+  function toggleSubmenu(id) {
+    const submenu = document.getElementById(id);
+    submenu.classList.toggle('hidden');
+  }
+</script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+
+  <!-- from -->
+
+
+  <script>
+  function sendWhatsApp(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const mobile = document.getElementById("mobile").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const city = document.getElementById("city").value;
+
+    const message = `Name: ${name}%0AMobile: ${mobile}%0AEmail: ${email}%0ACity: ${city}`;
+    const whatsappNumber = "919361603353"; // without +
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+    window.open(whatsappURL, "_blank");
+  }
+</script>
+
+</html>
