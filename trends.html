@@ -392,7 +392,23 @@ width: 200px !important;
     scroll-behavior: smooth;
   }
 </style>
+<style>
+  .zoom-container {
+    width: 200px; /* or 100% if responsive */
+    overflow: hidden;
+    border-radius: 10px;
+  }
 
+  .zoom-container img {
+    width: 100%;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+  }
+
+  .zoom-container:hover img {
+    transform: scale(1.2);
+  }
+</style>
 <body class="scroll-smooth">
     
        <nav class="w-full border-b border-gray-200 px-6" style="font-family: __fonts_de4bfb,__fonts_Fallback_de4bfb,latoregular,sans-serif;">
@@ -783,6 +799,10 @@ width: 200px !important;
 </button>
 
 
+
+
+
+
 <!-- menu -->
  <section class="bg-[#f9f9f9] " >
 
@@ -793,23 +813,23 @@ width: 200px !important;
 <section class="Horizontal-Scroll border-b border-gray-200 overflow-x-auto flex justify-center">
   <ul class="flex w-max space-x-16 px-6 py-4 text-base font-normal">
     <li><a href="#all" class="text-blue-500 border-b-4 border-blue-500 pb-1 inline-block">All</a></li>
-    <li><a href="#modular" class="text-black whitespace-nowrap">Modular Solutions</a></li>
-    <li><a href="#furniture" class="text-black whitespace-nowrap">Furniture & Décor</a></li>
-    <li><a href="#rooms" class="text-black whitespace-nowrap">Rooms</a></li>
-    <li><a href="#architecture" class="text-black whitespace-nowrap">Architecture</a></li>
-    <li><a href="#design" class="text-black whitespace-nowrap">Design and Construction</a></li>
+    <li><a href="#modular" class="text-black whitespace-nowrap">3D Wallpapers</a></li>
+    <li><a href="#furniture" class="text-black whitespace-nowrap">Wall Paint Ideas</a></li>
+    <li><a href="#rooms" class="text-black whitespace-nowrap">Living Room</a></li>
+    <li><a href="#architecture" class="text-black whitespace-nowrap">Bedroom</a></li>
+    <li><a href="#design" class="text-black whitespace-nowrap">Kid's Room</a></li>
   </ul>
 </section>
 
 
 
 
-  <!-- Modular Solutions -->
+  <!-- 3d wallpapers -->
 <section  id="modular" class="bg-[#f9f9f9] py-6 px-6">
   <div class="max-w-7xl mx-auto">
     <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
       <i class="fas fa-chart-line text-blue-500"></i>
-      <span>Modular Solutions</span>
+      <span>3D Wallpapers</span>
       
     </div>
 
@@ -818,67 +838,77 @@ width: 200px !important;
       <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
         <!-- Item 1 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="https://storage.googleapis.com/a1aa/image/ae37b666-d3f4-4007-fcfb-b2345a352161.jpg"
+            src="/trends-img/IMG-20250528-WA0078.jpg"
             alt="Modern kitchen with white cabinets and breakfast counter with stools"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Kitchen</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
+          <!-- <p class="text-base text-black leading-snug">
             8 Breakfast Counter Styles To Spruce Up Your Indian Kitchen
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 2 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="https://storage.googleapis.com/a1aa/image/5bb703fa-c1ac-4ca4-f6d8-a8c68e99b7bd.jpg"
+            src="/trends-img/IMG-20250528-WA0091.jpg"
             alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Kitchen</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
+          <!-- <p class="text-base text-black leading-snug">
             Gateways of Taste: Modern Kitchen Door Designs
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 3 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="https://storage.googleapis.com/a1aa/image/e8ecee50-8c9c-4fce-89f5-c843ea7bfa99.jpg"
+            src="/trends-img/WhatsApp Image 2025-05-28 at 11.41.18_79220f53.jpg"
             alt="Small bathroom with green walls and creative storage ideas"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Storage</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
+          <!-- <p class="text-base text-black leading-snug">
             12 Brilliant Bathroom Storage Ideas for Small Spaces
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 4 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="https://storage.googleapis.com/a1aa/image/9edff2d5-1e2f-43ee-b356-433089811ebd.jpg"
+            src="/trends-img/WhatsApp Image 2025-05-28 at 11.41.39_d20d81a1.jpg"
             alt="Hallway with modern wall cupboard and glass door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Wardrobe</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
+          <!-- <p class="text-base text-black leading-snug">
             From Drab to Fab: Hallway Cupboard Designs That Turn Heads
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 5 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="https://storage.googleapis.com/a1aa/image/24ff4f93-1a3f-458b-9aac-ea87f9feac2e.jpg"
+            src="/trends-img/WhatsApp Image 2025-05-28 at 11.41.45_f494d681.jpg"
             alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Wardrobe</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
+          <!-- <p class="text-base text-black leading-snug">
             Because Every Outfit Deserves A Perfect Home!
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -890,12 +920,12 @@ width: 200px !important;
 
 
 
-  <!-- Furniture & Décor -->
+  <!-- Wall Paint Ideas -->
  <section id="furniture" class="bg-[#f9f9f9] py-6 px-6">
   <div class="max-w-7xl mx-auto">
     <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
       <i class="fas fa-chart-line text-blue-500"></i>
-      <span>Furniture & Décor</span>
+      <span>Wall Paint Ideas</span>
       
     </div>
 
@@ -905,67 +935,77 @@ width: 200px !important;
         
         <!-- Item 1: Living Room -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/514638513405725591926.jpg"
+            src="/trends-img/IMG-20250528-WA0037.jpg"
             alt="Traditional living room"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">DIY</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Wall Paint Ideas</p>
+          <!-- <p class="text-base text-black leading-snug">
             Write Your Wall Story With Creative Wall Craft Hangings
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 2: Bedroom -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/259638028353993868147.jpg"
+            src="/trends-img/IMG-20250528-WA0042.jpg"
             alt="Indian style bedroom"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Door Design</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Wall Paint Ideas</p>
+          <!-- <p class="text-base text-black leading-snug">
             10 Stylish Kitchen Entrance Design Ideas for a Stunning Home
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 3: Bathroom -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+            src="/trends-img/IMG-20250528-WA0066.jpg"
             alt="Simple Indian bathroom"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Exterior Design</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Wall Paint Ideas</p>
+          <!-- <p class="text-base text-black leading-snug">
             Stylish Modern Exterior Wall Tile Designs: The Recipe for a Picture-Perfect Home
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 4: Dining Room -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/Kitchen-false-ceiling (1).jpg"
+            src="/trends-img/IMG-20250528-WA0068.jpg"
             alt="Indian style dining room"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">False Ceilings</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Wall Paint Ideas</p>
+          <!-- <p class="text-base text-black leading-snug">
             11 Stylish POP Corner Designs That Refresh Your Living Room in No Time
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 5: Home Office -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/Wardrobe.jpg"
+            src="/trends-img/IMG-20250528-WA0085.jpg"
             alt="Compact home office"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Furniture</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Wall Paint Ideas</p>
+          <!-- <p class="text-base text-black leading-snug">
             From Plush to Sleek: Discover the Best Sofa Materials for Your Home
-          </p>
+          </p> -->
         </div>
 
       </div>
@@ -979,12 +1019,12 @@ width: 200px !important;
 
 
 
-  <!-- Rooms -->
+  <!-- Living Room -->
   <section id="rooms" class="bg-[#f9f9f9] py-6 px-6">
   <div class="max-w-7xl mx-auto">
     <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
       <i class="fas fa-chart-line text-blue-500"></i>
-      <span>Rooms</span>
+      <span>Living Room</span>
       
     </div>
 
@@ -993,85 +1033,95 @@ width: 200px !important;
       <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
         <!-- Item 1 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/Kids-Room.jpg"
+            src="/trends-img/living room.jpg"
             alt="Modern kitchen with white cabinets and breakfast counter with stools"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Balcony</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Living Room</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 Discovering The Secrets To Creating Your Perfect Balcony Garden!
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 2 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/739638684082511567667.jpg"
+            src="/trends-img/living-room-1.jpg"
             alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Bathroom</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Living Room</p>
+          <!-- <p class="text-base text-black leading-snug">
            
 Top 16+ Stunning Wash Basin Designs for a Stylish Bathroom Makeover
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 3 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/983638516448620649079 (1).jpg"
+            src="/trends-img/living-room-3.jpg"
             alt="Small bathroom with green walls and creative storage ideas"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1"> Dining Room</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Living Room</p>
+          <!-- <p class="text-base text-black leading-snug">
            
 25 + Simple Ways To Decorate Your Dining Room Table That Will Impress Your Guests
 
 
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 4 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/customizes-blinds/814oqhsgvAL._AC_UF894,1000_QL80_.jpg"
+            src="/trends-img/living-room-4.jpg"
             alt="Hallway with modern wall cupboard and glass door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Home Office</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Living Room</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 40 New Modern POP Plus-Minus Designs to Spruce Up Fifth Wall of Your Room
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 5 -->
-        <!-- <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="https://storage.googleapis.com/a1aa/image/24ff4f93-1a3f-458b-9aac-ea87f9feac2e.jpg"
+            src="/trends-img/living-room-6.jpg"
             alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Modular Wardrobe</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Living Room</p>
+          <!-- <p class="text-base text-black leading-snug">
             Because Every Outfit Deserves A Perfect Home!
-          </p>
-        </div> -->
+          </p> -->
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Architecture -->
+<!-- Bedroom -->
    <section id="architecture" class="bg-[#f9f9f9] py-6 px-6">
   <div class="max-w-7xl mx-auto">
     <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
       <i class="fas fa-chart-line text-blue-500"></i>
-      <span>Architecture</span>
+      <span>Bedroom</span>
       
     </div>
 
@@ -1080,72 +1130,82 @@ Top 16+ Stunning Wash Basin Designs for a Stylish Bathroom Makeover
       <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
         <!-- Item 1 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/315638762567960981432.jpg"
+            src="/trends-img/pexels-cottonbro-6862448.jpg"
             alt="Modern kitchen with white cabinets and breakfast counter with stools"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Architects</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Bedroom</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 Blenheim Gardens- Unearth the Chapters of History
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 2 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/259638028353993868147.jpg"
+            src="/trends-img/pexels-heyho-6636252 (1).jpg"
             alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Architects</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Bedroom</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 The Iconic Works of Antoni Gaudí: A Tour of His Architecture
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 3 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
             src="/716638682247563568813.jpg"
             alt="Small bathroom with green walls and creative storage ideas"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">1Buildings and Monuments</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Bedroom</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 Revolutionary 3D-printed Homes for Modern Habitation
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 4 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="https://storage.googleapis.com/a1aa/image/9edff2d5-1e2f-43ee-b356-433089811ebd.jpg"
+            src="/trends-img/pexels-heyho-6980668.jpg"
             alt="Hallway with modern wall cupboard and glass door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Buildings and Monuments</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Bedroom</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 The New Parliament Building– Envisioning a New India
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 5 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/983638516448620649079.jpg"
+            src="/trends-img/pexels-julieaagaard-1374125.jpg"
             alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Celebrity Homes</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Bedroom</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 Allu Arjun House: A True Personification of Grandeur and Simplicity
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -1154,12 +1214,12 @@ Allu Arjun House: A True Personification of Grandeur and Simplicity
 
 
 
-<!-- Design and Construction -->
+<!-- Kid's Room -->
    <section id="design" class="bg-[#f9f9f9] py-6 px-6">
   <div class="max-w-7xl mx-auto">
     <div class="flex items-center space-x-2 mb-6 text-sm font-normal text-blue-500">
       <i class="fas fa-chart-line text-blue-500"></i>
-      <span>Design and Construction</span>
+      <span>Kid's Room</span>
       
     </div>
 
@@ -1168,74 +1228,84 @@ Allu Arjun House: A True Personification of Grandeur and Simplicity
       <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
         <!-- Item 1 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/customizes-blinds/71cnUbRC8xL.jpg"
+            src="/trends-img/kids-room-22.jpg"
             alt="Modern kitchen with white cabinets and breakfast counter with stools"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Materials</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Kid's Room</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 What is the Difference Between Marble and Granite?
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 2 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/customizes-blinds/minimalistic-living-room-design.jpg"
+            src="/trends-img/pexels-heyho-7018827.jpg"
             alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Materials</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Kid's Room</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 A Guide to IPS Flooring: Benefits, Types and More!
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 3 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/customizes-blinds/814oqhsgvAL._AC_UF894,1000_QL80_.jpg"
+            src="/trends-img/kids-room33.jpg"
             alt="Small bathroom with green walls and creative storage ideas"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Tips and Advice</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Kid's Room</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 Your Guideway to Different Types of Staircase Designs
 
 
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 4 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="/wall-painting/WhatsApp Image 2025-05-15 at 8.37.36 AM.jpeg"
+            src="/trends-img/pexels-pavel-danilyuk-7220424.jpg"
             alt="Hallway with modern wall cupboard and glass door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Tips and Advice</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Kid's Room</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 The Ultimate Guide to Ideal Size for Living Rooms
-          </p>
+          </p> -->
         </div>
 
         <!-- Item 5 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
+          <div class="zoom-container">
           <img
-            src="https://storage.googleapis.com/a1aa/image/24ff4f93-1a3f-458b-9aac-ea87f9feac2e.jpg"
+            src="/trends-img/Kids-Room (1).jpg"
             alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
-            class="w-full h-[140px] object-cover rounded-sm"
+            class=" w-full h-[140px] object-cover rounded-sm"
           />
-          <p class="text-xs text-blue-500 mt-2 mb-1">Vastu Tips</p>
-          <p class="text-base text-black leading-snug">
+          </div>
+          <p class="text-xs text-blue-500 mt-2 mb-1">Kid's Room</p>
+          <!-- <p class="text-base text-black leading-snug">
             
 Staircase Vastu Shastra Tips to Enhance Your Home's Harmony
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
