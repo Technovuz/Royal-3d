@@ -409,6 +409,39 @@ width: 200px !important;
     transform: scale(1.2);
   }
 </style>
+
+<style>
+  /* Animate the modal */
+  .modal-open {
+    animation: fadeIn 0.3s ease forwards;
+  }
+
+  /* Animate the image inside */
+  .zoom-in {
+    animation: zoomIn 0.4s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+</style>
+
 <body class="scroll-smooth">
     
        <nav class="w-full border-b border-gray-200 px-6" style="font-family: __fonts_de4bfb,__fonts_Fallback_de4bfb,latoregular,sans-serif;">
@@ -1684,6 +1717,7 @@ Staircase Vastu Shastra Tips to Enhance Your Home's Harmony
 
 
 
+
 </body>
 <!-- nav -->
 <script>
@@ -1808,13 +1842,24 @@ Staircase Vastu Shastra Tips to Enhance Your Home's Harmony
   function showImageModal(img) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImage");
+
     modalImg.src = img.src;
+    
     modal.classList.remove("hidden");
+    modal.classList.add("modal-open");
+    modalImg.classList.add("zoom-in");
+
+    // Remove animation classes after animation ends (optional, for reusability)
+    modalImg.addEventListener("animationend", () => {
+      modal.classList.remove("modal-open");
+      modalImg.classList.remove("zoom-in");
+    }, { once: true });
   }
 
   function closeImageModal() {
     document.getElementById("imageModal").classList.add("hidden");
   }
 </script>
+
 
 </html>
