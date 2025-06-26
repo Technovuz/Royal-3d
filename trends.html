@@ -834,84 +834,72 @@ width: 200px !important;
     </div>
 
     <!-- Scroll on small, grid on md+ -->
-    <div class="overflow-x-auto md:overflow-visible">
-      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
-        <!-- Item 1 -->
-        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
-          <div class="zoom-container">
-          <img
-            src="/trends-img/IMG-20250528-WA0078.jpg"
-            alt="Modern kitchen with white cabinets and breakfast counter with stools"
-            class="w-full h-[140px] object-cover rounded-sm"
-          />
-          </div>
-          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
-          <!-- <p class="text-base text-black leading-snug">
-            8 Breakfast Counter Styles To Spruce Up Your Indian Kitchen
-          </p> -->
-        </div>
-
-        <!-- Item 2 -->
-        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
-          <div class="zoom-container">
-          <img
-            src="/trends-img/IMG-20250528-WA0091.jpg"
-            alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
-            class="w-full h-[140px] object-cover rounded-sm"
-          />
-          </div>
-          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
-          <!-- <p class="text-base text-black leading-snug">
-            Gateways of Taste: Modern Kitchen Door Designs
-          </p> -->
-        </div>
-
-        <!-- Item 3 -->
-        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
-          <div class="zoom-container">
-          <img
-            src="/trends-img/WhatsApp Image 2025-05-28 at 11.41.18_79220f53.jpg"
-            alt="Small bathroom with green walls and creative storage ideas"
-            class="w-full h-[140px] object-cover rounded-sm"
-          />
-          </div>
-          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
-          <!-- <p class="text-base text-black leading-snug">
-            12 Brilliant Bathroom Storage Ideas for Small Spaces
-          </p> -->
-        </div>
-
-        <!-- Item 4 -->
-        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
-          <div class="zoom-container">
-          <img
-            src="/trends-img/WhatsApp Image 2025-05-28 at 11.41.39_d20d81a1.jpg"
-            alt="Hallway with modern wall cupboard and glass door designs"
-            class="w-full h-[140px] object-cover rounded-sm"
-          />
-          </div>
-          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
-          <!-- <p class="text-base text-black leading-snug">
-            From Drab to Fab: Hallway Cupboard Designs That Turn Heads
-          </p> -->
-        </div>
-
-        <!-- Item 5 -->
-        <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
-          <div class="zoom-container">
-          <img
-            src="/trends-img/WhatsApp Image 2025-05-28 at 11.41.45_f494d681.jpg"
-            alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
-            class="w-full h-[140px] object-cover rounded-sm"
-          />
-          </div>
-          <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
-          <!-- <p class="text-base text-black leading-snug">
-            Because Every Outfit Deserves A Perfect Home!
-          </p> -->
-        </div>
+<div class="overflow-x-auto md:overflow-visible">
+  <div
+    class="grid grid-flow-col auto-cols-[250px] gap-0 md:grid-cols-5 md:auto-cols-auto md:gap-8 md:grid-flow-row"
+  >
+    <!-- Item 1 -->
+    <div class="w-full">
+      <div class="zoom-container">
+        <img
+          src="/trends-img/IMG-20250528-WA0078.jpg" onclick="showImageModal(this)"
+          alt="Modern kitchen"
+          class="w-full h-[140px] object-cover rounded-sm"
+        />
       </div>
+      <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
     </div>
+
+    <!-- Item 2 -->
+    <div class="w-full">
+      <div class="zoom-container">
+        <img
+          src="/trends-img/IMG-20250528-WA0091.jpg" onclick="showImageModal(this)"
+          alt="Bright kitchen"
+          class="w-full h-[140px] object-cover rounded-sm"
+        />
+      </div>
+      <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="w-full">
+      <div class="zoom-container">
+        <img
+          src="/trends-img/WhatsApp Image 2025-05-28 at 11.41.18_79220f53.jpg" onclick="showImageModal(this)"
+          alt="Small bathroom"
+          class="w-full h-[140px] object-cover rounded-sm"
+        />
+      </div>
+      <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="w-full">
+      <div class="zoom-container">
+        <img
+          src="/trends-img/WhatsApp Image 2025-05-28 at 11.41.39_d20d81a1.jpg" onclick="showImageModal(this)"
+          alt="Hallway design"
+          class="w-full h-[140px] object-cover rounded-sm"
+        />
+      </div>
+      <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="w-full">
+      <div class="zoom-container">
+        <img
+          src="/trends-img/WhatsApp Image 2025-05-28 at 11.41.45_f494d681.jpg" onclick="showImageModal(this)"
+          alt="Wardrobe"
+          class="w-full h-[140px] object-cover rounded-sm"
+        />
+      </div>
+      <p class="text-xs text-blue-500 mt-2 mb-1">3D Wallpapers</p>
+    </div>
+  </div>
+</div>
+
   </div>
 </section>
 
@@ -930,14 +918,16 @@ width: 200px !important;
     </div>
 
     <!-- Scroll on small, grid on md+ -->
-    <div class="overflow-x-auto md:overflow-visible">
-      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
+   <div class="overflow-x-auto md:overflow-visible">
+  <div
+    class="grid grid-flow-col auto-cols-[250px] gap-0 md:grid-cols-5 md:auto-cols-auto md:gap-8 md:grid-flow-row"
+  >
         
         <!-- Item 1: Living Room -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/IMG-20250528-WA0037.jpg"
+            src="/trends-img/IMG-20250528-WA0037.jpg" onclick="showImageModal(this)"
             alt="Traditional living room"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -952,7 +942,7 @@ width: 200px !important;
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/IMG-20250528-WA0042.jpg"
+            src="/trends-img/IMG-20250528-WA0042.jpg" onclick="showImageModal(this)"
             alt="Indian style bedroom"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -967,7 +957,7 @@ width: 200px !important;
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/IMG-20250528-WA0066.jpg"
+            src="/trends-img/IMG-20250528-WA0066.jpg" onclick="showImageModal(this)"
             alt="Simple Indian bathroom"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -982,7 +972,7 @@ width: 200px !important;
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/IMG-20250528-WA0068.jpg"
+            src="/trends-img/IMG-20250528-WA0068.jpg" onclick="showImageModal(this)"
             alt="Indian style dining room"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -997,7 +987,7 @@ width: 200px !important;
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/IMG-20250528-WA0085.jpg"
+            src="/trends-img/IMG-20250528-WA0085.jpg" onclick="showImageModal(this)"
             alt="Compact home office"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1029,13 +1019,15 @@ width: 200px !important;
     </div>
 
     <!-- Scroll on small, grid on md+ -->
-    <div class="overflow-x-auto md:overflow-visible">
-      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
+  <div class="overflow-x-auto md:overflow-visible">
+  <div
+    class="grid grid-flow-col auto-cols-[250px] gap-0 md:grid-cols-5 md:auto-cols-auto md:gap-8 md:grid-flow-row"
+  >
         <!-- Item 1 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/living room.jpg"
+            src="/trends-img/living room.jpg" onclick="showImageModal(this)"
             alt="Modern kitchen with white cabinets and breakfast counter with stools"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1051,7 +1043,7 @@ Discovering The Secrets To Creating Your Perfect Balcony Garden!
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/living-room-1.jpg"
+            src="/trends-img/living-room-1.jpg" onclick="showImageModal(this)"
             alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1067,7 +1059,7 @@ Top 16+ Stunning Wash Basin Designs for a Stylish Bathroom Makeover
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/living-room-3.jpg"
+            src="/trends-img/living-room-3.jpg" onclick="showImageModal(this)"
             alt="Small bathroom with green walls and creative storage ideas"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1085,7 +1077,7 @@ Top 16+ Stunning Wash Basin Designs for a Stylish Bathroom Makeover
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/living-room-4.jpg"
+            src="/trends-img/living-room-4.jpg" onclick="showImageModal(this)"
             alt="Hallway with modern wall cupboard and glass door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1101,7 +1093,7 @@ Top 16+ Stunning Wash Basin Designs for a Stylish Bathroom Makeover
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/living-room-6.jpg"
+            src="/trends-img/living-room-6.jpg" onclick="showImageModal(this)"
             alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1127,12 +1119,14 @@ Top 16+ Stunning Wash Basin Designs for a Stylish Bathroom Makeover
 
     <!-- Scroll on small, grid on md+ -->
     <div class="overflow-x-auto md:overflow-visible">
-      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
+  <div
+    class="grid grid-flow-col auto-cols-[250px] gap-0 md:grid-cols-5 md:auto-cols-auto md:gap-8 md:grid-flow-row"
+  >
         <!-- Item 1 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/pexels-cottonbro-6862448.jpg"
+            src="/trends-img/pexels-cottonbro-6862448.jpg" onclick="showImageModal(this)"
             alt="Modern kitchen with white cabinets and breakfast counter with stools"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1148,7 +1142,7 @@ Blenheim Gardens- Unearth the Chapters of History
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/pexels-heyho-6636252 (1).jpg"
+            src="/trends-img/pexels-heyho-6636252 (1).jpg" onclick="showImageModal(this)"
             alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1164,7 +1158,7 @@ The Iconic Works of Antoni Gaudí: A Tour of His Architecture
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/716638682247563568813.jpg"
+            src="/716638682247563568813.jpg" onclick="showImageModal(this)"
             alt="Small bathroom with green walls and creative storage ideas"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1180,7 +1174,7 @@ Revolutionary 3D-printed Homes for Modern Habitation
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/pexels-heyho-6980668.jpg"
+            src="/trends-img/pexels-heyho-6980668.jpg" onclick="showImageModal(this)"
             alt="Hallway with modern wall cupboard and glass door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1196,7 +1190,7 @@ The New Parliament Building– Envisioning a New India
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/pexels-julieaagaard-1374125.jpg"
+            src="/trends-img/pexels-julieaagaard-1374125.jpg" onclick="showImageModal(this)"
             alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1224,13 +1218,15 @@ Allu Arjun House: A True Personification of Grandeur and Simplicity
     </div>
 
     <!-- Scroll on small, grid on md+ -->
-    <div class="overflow-x-auto md:overflow-visible">
-      <div class="flex space-x-6 min-w-max md:grid md:grid-cols-5 md:gap-x-6 md:gap-y-6 md:min-w-0">
+  <div class="overflow-x-auto md:overflow-visible">
+  <div
+    class="grid grid-flow-col auto-cols-[250px] gap-0 md:grid-cols-5 md:auto-cols-auto md:gap-8 md:grid-flow-row"
+  >
         <!-- Item 1 -->
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/kids-room-22.jpg"
+            src="/trends-img/kids-room-22.jpg" onclick="showImageModal(this)"
             alt="Modern kitchen with white cabinets and breakfast counter with stools"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1246,7 +1242,7 @@ What is the Difference Between Marble and Granite?
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/pexels-heyho-7018827.jpg"
+            src="/trends-img/pexels-heyho-7018827.jpg" onclick="showImageModal(this)"
             alt="Bright kitchen with open door leading to garden, showcasing modern kitchen door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1262,7 +1258,7 @@ A Guide to IPS Flooring: Benefits, Types and More!
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/kids-room33.jpg"
+            src="/trends-img/kids-room33.jpg" onclick="showImageModal(this)"
             alt="Small bathroom with green walls and creative storage ideas"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1280,7 +1276,7 @@ Your Guideway to Different Types of Staircase Designs
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/pexels-pavel-danilyuk-7220424.jpg"
+            src="/trends-img/pexels-pavel-danilyuk-7220424.jpg" onclick="showImageModal(this)"
             alt="Hallway with modern wall cupboard and glass door designs"
             class="w-full h-[140px] object-cover rounded-sm"
           />
@@ -1296,7 +1292,7 @@ The Ultimate Guide to Ideal Size for Living Rooms
         <div class="w-[250px] flex-shrink-0 md:w-auto md:flex-shrink md:block">
           <div class="zoom-container">
           <img
-            src="/trends-img/Kids-Room (1).jpg"
+            src="/trends-img/Kids-Room (1).jpg" onclick="showImageModal(this)"
             alt="Woman standing in front of a smartly designed wardrobe with clothes and storage"
             class=" w-full h-[140px] object-cover rounded-sm"
           />
@@ -1677,6 +1673,17 @@ Staircase Vastu Shastra Tips to Enhance Your Home's Harmony
 </section>
 
 
+
+
+<!-- Image Modal -->
+<div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+  <span onclick="closeImageModal()" class="absolute top-4 right-6 text-white text-3xl cursor-pointer">&times;</span>
+  <img id="modalImage" class="max-w-full max-h-full rounded-lg shadow-lg" />
+</div>
+
+
+
+
 </body>
 <!-- nav -->
 <script>
@@ -1791,6 +1798,22 @@ Staircase Vastu Shastra Tips to Enhance Your Home's Harmony
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
 
     window.open(whatsappURL, "_blank");
+  }
+</script>
+
+
+
+<!-- image show popup -->
+<script>
+  function showImageModal(img) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    modalImg.src = img.src;
+    modal.classList.remove("hidden");
+  }
+
+  function closeImageModal() {
+    document.getElementById("imageModal").classList.add("hidden");
   }
 </script>
 

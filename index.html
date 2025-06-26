@@ -848,14 +848,19 @@ width: 200px !important;
 <!-- hero section -->
 <div class="hero-main-sec relative w-full h-[90vh] max-w-[1920px] mx-auto overflow-hidden">
   <!-- Background Image -->
-  <div class="absolute inset-0">
-    <img
-      src="/wall-painting/8c691297-51c9-4eaf-be40-e92442e23a96.png"
-      alt="Modern kitchen interior design"
-      class="hero-img w-full h-full object-cover object-center"
-    />
-    <div class="absolute inset-0 bg-black/30"></div> <!-- Optional dark overlay for readability -->
+  <!-- Carousel Slider -->
+<div class="absolute inset-0">
+  <div class="relative w-full h-full">
+    <div id="slider" class="w-full h-full">
+      <img src="/wall-painting/3f7c3dbf-a5cf-49bc-b47f-3cedbcbe45aa.png" class="w-full h-full object-cover object-center hero-slide hidden" />
+      <img src="/wall-painting/ai-generated-modern-styled-entryway (1).jpg" class="w-full h-full object-cover object-center hero-slide hidden" />
+      <img src="/wall-painting/delivery-man-delivering-package.jpg" class="w-full h-full object-cover object-center hero-slide hidden" />
+      <img src="/wall-painting/side-view-man-relaxing-indoors.jpg" class="w-full h-full object-cover object-center hero-slide hidden" />
+    </div>
+    <div class="absolute inset-0 bg-black/30"></div>
   </div>
+</div>
+
 
   <!-- Price Tag -->
   <!-- <div class="absolute top-6 right-4 sm:top-8 sm:right-8 md:top-10 md:right-10 flex flex-col items-center z-10">
@@ -1049,7 +1054,7 @@ width: 200px !important;
     <div class="flex justify-center md:justify-end">
       <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md group">
         <img
-          src="/owner.jpg"
+          src="/owner-Picsart-AiImageEnhancer.jpg"
           alt="Royal3D Owner"
           class="w-full rounded-3xl shadow-2xl object-cover transition-transform duration-300 group-hover:scale-105"
         />
@@ -1181,7 +1186,7 @@ width: 200px !important;
 
       <!-- Wallpapers -->
       <div class="card" data-category="living-room">
-        <img src="/wall-paper/WhatsApp Image 2025-05-15 at 8.37.41 AM (1).jpeg" class="w-full h-[300px] object-cover rounded-lg shadow-lg" alt="Living Room">
+        <img src="/wall-paper/WhatsApp Image 2025-05-15 at 8.37.41 AM (1).jpeg"  class="w-full h-[300px] object-cover rounded-lg shadow-lg" alt="Living Room ">
         <div class="p-2 text-sm">Stylish designs for every mood.</div>
       </div>
       <div class="card" data-category="living-room">
@@ -2704,6 +2709,26 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
     // Open WhatsApp chat with prefilled message
     window.open(`https://wa.me/919361603353?text=${message}`, '_blank');
   });
+</script>
+
+
+
+
+
+
+
+<script>
+  let slideIndex = 0;
+  const heroSlides = document.querySelectorAll(".hero-slide");
+
+  function showSlides() {
+    heroSlides.forEach(slide => slide.classList.add("hidden"));
+    heroSlides[slideIndex].classList.remove("hidden");
+    slideIndex = (slideIndex + 1) % heroSlides.length;
+  }
+
+  showSlides(); // initial call
+  setInterval(showSlides, 4000); // change every 3 sec
 </script>
 
 
